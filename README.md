@@ -6,7 +6,7 @@ Date: Nov. 24, 2025
 # AES Implementation
 
 ## Overview
-This repository contains a modular implementation of the Advanced Encryption Standard (AES) using 128-bit keys. 
+This repository contains a modular implementation of the Advanced Encryption Standard (AES). 
 The implementation is written in Python, using the Pycharm IDE, without the use of external libraries (per the instruction PDF). 
 
 ---
@@ -20,9 +20,9 @@ Includes:
 - ShiftRows
 - MixColumns
 - AddRoundKey
-- AES-128 Key Expansion
+- AES Key Expansion
 - Final ciphertext construction
-- AES-128 Decryption using inverse transformations
+- AES Decryption using inverse transformations
 - Round-state extraction for observing intermediate AES states
 - Avalanche demonstration function for analyzing bit-level diffusion across AES rounds
 
@@ -30,7 +30,7 @@ Includes:
 Contains the AES S-box and Rcon tables used for substitution and key expansion. These values are stored separately to maintain clarity and modularity.
 
 ### `test_nist.py`
-Runs the official AES-128 Known Answer Test (KAT) published by NIST. This verifies that the implementation produces the expected ciphertext for a standard plaintext-key pair.
+Runs the official AES Known Answer Test (KAT) published by NIST. This verifies that the implementation produces the expected ciphertext for a standard plaintext-key pair.
 
 ### `test_random_inputs.py`
 Runs several randomized encryption tests to ensure the implementation behaves correctly with arbitrary but valid inputs.
